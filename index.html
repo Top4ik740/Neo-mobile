@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <title>NEO AI</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- 💬 Интерфейс чата -->
+  <div class="layout" id="chat-app">
+    <aside class="sidebar">
+      <h2>💬 Чаты</h2>
+      <ul id="chat-list"></ul>
+      <button id="new-chat">+ Новый чат</button>
+      <button id="delete-chat">🗑️ Удалить чат</button>
+    </aside>
+    <main class="chat-container">
+      <div class="header">
+        <button id="mobile-menu-btn" aria-label="Открыть меню" class="mobile-menu">☰</button>
+        <h1>NEO AI</h1>
+        <select id="theme-select">
+          <option value="neon">Neon Green</option>
+          <option value="blue">Neon Blue</option>
+          <option value="purple">Neon Purple</option>
+          <option value="red">Neon Red</option>
+        </select>
+      </div>
+      <div id="overlay" class="overlay" tabindex="-1" aria-hidden="true"></div>
+      <div id="chat-box"></div>
+      <form id="chat-form">
+        <input type="text" id="user-input" placeholder="Спроси что-нибудь..." required />
+        <button type="submit">Отправить</button>
+      </form>
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
